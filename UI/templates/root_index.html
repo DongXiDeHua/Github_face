@@ -1,0 +1,215 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>管理员，欢迎您！</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:3000,4000,7000" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static '/css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static '/css/icomoon.css' %}">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="{% static '/css/themify-icons.css' %}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{% static '/css/magnific-popup.css' %}">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{% static '/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static '/css/owl.theme.default.min.css' %}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{% static '/css/style.css' %}">
+
+	<!-- Modernizr JS -->
+	<script src="{% static '/js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="{% static '/js/respond.min.js' %}"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="gtco-loader"></div>
+
+	<div id="page">
+
+
+	<div class="page-inner">
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div id="gtco-logo"><a href="http://127.0.0.1:8000/index/">Python<em>.</em></a></div>
+				</div>
+				<div class="col-xs-8 text-right menu-1">
+					<ul>
+						<li><a href="http://127.0.0.1:8000/index">我是用户</a></li>
+						<li><a href="/root/index/">管理员主页</a></li>
+						<li class="has-dropdown">
+							<a>选择功能</a>
+							<ul class="dropdown">
+								<li><a href="/root/root_index/user_manage/">用户管理</a></li>
+								<li><a href="/root/root_index/reptile_manage/">爬取数据管理</a></li>
+								<li><a href="/root/root_index/face_manage/">生成模型管理</a></li>
+								<li><a href="/root/root_index/num_manage/">数据赋值管理</a></li>
+							</ul>
+						</li>
+						<li><a></a></li>
+						<li><a>欢迎您！管理员{{ root_name }}</a></li>
+						<li class="btn-cta"><a href="/root/root_cookie_delete/"><span>切换管理员账号</span></a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image: url({%　static　'/images/img_4.jpg'　%})">
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 text-left">
+					<div class="row row-mt-15em">
+						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
+							<span class="intro-text-small">基于Django框架</span>
+							<h1>基于Python的网络爬虫及人物画像系统——管理界面</h1>
+							<p></p>
+							<h2>请在导航栏<b>选择功能</b>处进行选择</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="gtco-section">
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
+					<h2>可以选择的功能</h2>
+					<p>管理员使用说明书</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<ul class="fh5co-faq-list">
+						<li class="animate-box">
+							<h2>管理用户</h2>
+							<p>查看已经注册的用户信息，并且可以删除目标用户。</p>
+						</li>
+						<li class="animate-box">
+							<h2>管理爬取的数据</h2>
+							<p>查看所有用户的历史爬取信息，并且可以删除目标数据。</p>
+						</li>
+						<li class="animate-box">
+							<h2>管理人物画像</h2>
+							<p>查看所有用户的历史生成信息，并且可以删除目标画像模型。</p>
+						</li>
+						<li class="animate-box">
+							<h2>管理数据赋值</h2>
+							<p>查看对应的字段的赋值情况，并且可以更改目标的赋值。</p>
+						</li>
+                        <li class="animate-box">
+							<h2><b>请在上方导航栏中选择需要的功能。</b></h2>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="gtco-footer" role="contentinfo">
+		<div class="gtco-container">
+			<div class="row row-p	b-md">
+
+				<div class="col-md-4">
+					<div class="gtco-widget">
+						<h3>关于 <span class="footer-logo">本系统<span>.<span></span></h3>
+						<p>毕业设计</p>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-md-push-1">
+					<div class="gtco-widget">
+						<h3>链接</h3>
+						<ul class="gtco-footer-links">
+							<li><a href="http://www.bilibili.com">B站</a></li>
+							<li><a href="http://www.iqiyi.com">爱奇艺</a></li>
+							<li><a href="http://www.weibo.com">微博</a></li>
+							<li><a href="http://www.xiaohngshu.com">小红书</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="gtco-widget">
+						<h3>Get In Touch</h3>
+						<ul class="gtco-quick-contact">
+							<li><a href="#"><i class="icon-phone"></i> 13970069700</a></li>
+							<li><a href="#"><i class="icon-mail2"></i> dongxidehua@foxmail.com</a></li>
+							<li><a href="#"><i class="icon-chat"></i> WeChat:phone</a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row copyright">
+				<div class="col-md-12">
+					<p class="pull-left">
+						<small class="block">Copyright &copy; 2024.</small>
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	</div>
+
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="{% static '/js/jquery.min.js' %}"></script>
+	<!-- jQuery Easing -->
+	<script src="{% static '/js/jquery.easing.1.3.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static '/js/bootstrap.min.js' %}"></script>
+	<!-- Waypoints -->
+	<script src="{% static '/js/jquery.waypoints.min.js' %}"></script>
+	<!-- Carousel -->
+	<script src="{% static '/js/owl.carousel.min.js' %}"></script>
+	<!-- countTo -->
+	<script src="{% static '/js/jquery.countTo.js' %}"></script>
+	<!-- Magnific Popup -->
+	<script src="{% static '/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static '/js/magnific-popup-options.js' %}"></script>
+	<!-- Main -->
+	<script src="{% static '/js/main.js' %}"></script>
+
+	</body>
+</html>
+

@@ -1,0 +1,66 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>注册</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 50px auto;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label, input {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form action="/register/" method="post">
+        {% csrf_token %}
+        <div class="container">
+            <label><b>用户名</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label><b>密码</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">注册</button>
+            <a href="http://127.0.0.1:8000/index/">登录账号</a>
+            <span style="color:red">{{ error_msg }}</span>
+        </div>
+    </form>
+</body>
+</html>
